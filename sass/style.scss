@@ -129,6 +129,9 @@ main {
   .tl-timeline,.tl-timeline h1, .tl-timeline h2, .tl-timeline h3, .tl-timeline h4, .tl-timeline h5, .tl-timeline h6,.tl-timeline .tl-headline-date, .tl-timeline h3.tl-headline-date {
     font-family: 'PT Serif' !important;
   }
+  .tl-timeline .tl-caption, .tl-timeline .tl-credit {
+    font-family: 'Montserrat' !important;
+  }
   .timeline-wrapper {
     height: 650px;
     @media screen and (max-width:766px){
@@ -236,12 +239,12 @@ main {
     height: 50px;
     line-height: 50px;
     width: 50px;
-    border: 3px solid #FF0;
+    border: 3px solid #1d1d1b;
     background-color: #1d1d1b;
   
     text-align: center;
     font-family: 'PT Serif', sans-serif;
-    font-size: 20px;
+    font-size: 25px;
     color: #FFF;
   
     -webkit-border-radius: 50%;
@@ -249,9 +252,11 @@ main {
     border-radius: 50%;
   }
   .js-ag-active .ag-timeline-card_point {
-    color: #ff0;
+    // color: #ff0;
     // background-color: #FF0;
-    background: #3a2c11;
+    // background: #3a2c11;
+    background-color: #ae0404;
+    border: 3px solid #ae0404;
   }
   .ag-timeline-card_meta-box {
     display: inline-block;
@@ -453,4 +458,31 @@ main {
     }
   
   }
+
+
+}
+
+//scroll
+.lala {
+  .wrap {
+    min-width: 50vw;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 4ch;
+    border: 1px solid;
+    height: 300px;
+    width: 100%;
+  }
+  .date_ {
+    font-size: 24px;
+  }
+}
+
+#main{
+  overflow-x: hidden;
+  display: flex;
+  position: sticky;
+  top:0;
 }
