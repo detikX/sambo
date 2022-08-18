@@ -66,8 +66,8 @@ var sample_json = {
     {
       "media": {
         "url": "https://news.detik.com/x/detail/investigasi/20220808/Irjen-Sambo-di-Pusaran-Pembunuhan-Brigadir-J/images/ferdi-sambo--ha7hw.png",
-        "caption": "A young poised Whitney Houston in an interview with EbonyJet.",
-        "credit": "EbonyJet"
+        "caption": "Irjen Sambo dalam perjalanan",
+        "credit": "detikX"
       },
       "start_date": {
         "month": "7",
@@ -87,6 +87,12 @@ var sample_json = {
       "group": "Magelang"
     },
     {
+      // https://news.detik.com/x/detail/investigasi/20220815/Permufakatan-Jahat-Sambo-di-Duren-Tiga/images/freddy-sambo-kg1tu7.png
+      "media": {
+        "url": "https://news.detik.com/x/detail/investigasi/20220815/Permufakatan-Jahat-Sambo-di-Duren-Tiga/images/freddy-sambo-kg1tu7.png",
+        "caption": "Irjen Sambo dalam perjalanan",
+        "credit": "detikX"
+      },
       "start_date": {
         "month": "7",
         "day": "4",
