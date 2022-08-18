@@ -43,6 +43,10 @@ section {
   left: 50%;
   top: 50%;
   transform: translate(-50%,-50%);
+  @media screen and (max-width:766px){
+    width: 70%;
+    text-align: center;
+  }
   h1 {
     font-weight: 700;
     
@@ -132,7 +136,7 @@ main {
     }
   }
   .tl-timeline p {
-    font-size: 20px;
+    font-size: 18px;
   }
 }
 
