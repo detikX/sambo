@@ -61,211 +61,223 @@ var additionalOptions = {
   timenav_height: 250
 };
 
-var sample_json = {
-  "events": [
-    {
-      "media": {
-        "url": "https://news.detik.com/x/detail/investigasi/20220808/Irjen-Sambo-di-Pusaran-Pembunuhan-Brigadir-J/images/ferdi-sambo--ha7hw.png",
-        "caption": "Irjen Sambo dalam perjalanan",
-        "credit": "detikX"
-      },
-      "start_date": {
-        "month": "7",
-        "day": "2",
-        "year": "2022",
-        "hour": "13",
-        "minute": "00",
-        "second": "00",
-        "millisecond": 0,
-        // "format": "dd mmm yy,hh.MM"
-        "format": "dd mmm yy, HH:MM"
-      },
-      "text": {
-        "headline": "Sabtu, 2 Juli 2022",
-        "text": "Keluarga besar Ferdy Sambo dan istrinya Putri Candrawathi berangkat ke Magelang, Jawa Tengah, untuk menengok kedua anaknya yang bersekolah di SMA Taruna Nusantara, Magelang. Rombongan ajudan diajak serta, termasuk Yosua, Richard Eliezer Pudihang Lumiu alias Bharada E, Bripka Ricky Rizal, Briptu Daden, serta asisten rumah tangga bernama Kuat Ma’ruf dan S. Mereka menginap di rumah Ferdy Sambo di Cempaka Residence, Mertoyudan, Magelang."
-      },
-      "group": "Magelang"
-    },
-    {
-      // https://news.detik.com/x/detail/investigasi/20220815/Permufakatan-Jahat-Sambo-di-Duren-Tiga/images/freddy-sambo-kg1tu7.png
-      "media": {
-        "url": "https://news.detik.com/x/detail/investigasi/20220815/Permufakatan-Jahat-Sambo-di-Duren-Tiga/images/freddy-sambo-kg1tu7.png",
-        "caption": "Irjen Sambo dalam perjalanan",
-        "credit": "detikX"
-      },
-      "start_date": {
-        "month": "7",
-        "day": "4",
-        "year": "2022",
-        "hour": "18",
-        "minute": "00",
-        "second": "00",
-        "millisecond": 0,
-        "format": "dd mmm yy, HH:MM"
-      },
-      "text": {
-        "headline": "Senin, 4 Juli 2022",
-        "text": "Kuat Ma’ruf mengklaim memergoki Yosua duduk berdekatan dengan Putri di Sofa. Kuat menegur Yosua karena menuding apa yang dilakukan Yosua itu tidak sopan."
-      },
-      "group": "Magelang"
-    },
-    {
-      "start_date": {
-        "year": "2022",
-        "month": "7",
-        "day": "6",
-        "hour": "09",
-        "minute": "00",
-        "second": "00",
-        "millisecond": 0,
-        "format": "dd mmm yy, HH:MM"
+$.ajax({
+  url: 'js/data.json',
+  type: 'GET',
+  success: (response) => {
+    console.log(response);
+    var sample_json = response;
+    window.timeline = new TL.Timeline('timeline-embed'
+      //, timeline_json
+      , sample_json
+    );
+  }
+})
 
-      },
-      "text": {
-        "headline": "Rabu, 6 Juli 2022",
-        "text": "Sambo dan Putri merayakan hari jadi pernikahan. Dikabarkan, sempat terjadi cekcok antara Putri dan Sambo seusai perayaan hari jadi ini. Pertengkaran inilah yang diduga membuat Sambo memilih pulang lebih dulu ke Jakarta keesokan paginya. Sambo pulang ke Jakarta menggunakan pesawat didampingi ajudannya, Briptu Daden."
-      },
-      "group": "Magelang"
-    },
-    {
-      "start_date": {
-        "month": "7",
-        "day": "7",
-        "year": "2022",
-        "hour": "13",
-        "minute": "00",
-        "second": "00",
-        "millisecond": 0,
-        "format": "dd mmm yy, HH:MM"
-      },
-      "text": {
-        "headline": "Kamis, 7 Juli 2022",
-        "text": "<p>Kuat mengklaim kembali memergoki Yosua sedang berdekatan dengan Putri. Kali ini peristiwa itu terjadi di kamar. Waktu itu, Putri sedang sakit. Kuat diduga melaporkan peristiwa itu kepada Sambo. Itulah peristiwa yang disebut ‘merendahkan harkat dan martabat keluarga’, sehingga membuat Sambo marah.</p><p>Kuat dan Yosua pun disebut sempat terlibat adu mulut. Putri sampai menelepon Richard untuk minta bantuan melerai keduanya. Richard, yang sedang mengantar anak Sambo dan Putri sekolah ke Taruna Nusantara, langsung pulang ke Cempaka Residence sesuai perintah. Sambo juga disebut menelepon Ricky untuk menyita pistol HS-9 dan senjata laras panjang milik Yosua.</p>"
-      },
-      "group": "Magelang"
-    },
-    {
-      "start_date": {
-        "month": "7",
-        "day": "8",
-        "year": "2022",
-        "hour": "08",
-        "minute": "00",
-        "second": "00",
-        "millisecond": 0,
-        "format": "dd mmm yy, HH:MM"
-      },
-      "text": {
-        "headline": "Jumat, 8 Juli 2022",
-        "text": "Rombongan Putri Candrawathi pulang ke Jakarta. Putri pulang menumpang mobil Lexus berwarna hitam bersama Richard, S, dan Kuat. Yosua menumpang mobil APV hitam bersama Ricky. Iring-iringan rombongan ini dikawal oleh satu mobil patroli. Di tengah perjalanan, Yosua sempat disebut mengirim pesan kepada Putri supaya mau membujuk Ricky mengembalikan senjatanya."
-      },
-      "group": "Magelang"
-    },
+// var sample_json = {
+//   "events": [
+//     {
+//       "media": {
+//         "url": "https://news.detik.com/x/detail/investigasi/20220808/Irjen-Sambo-di-Pusaran-Pembunuhan-Brigadir-J/images/ferdi-sambo--ha7hw.png",
+//         "caption": "Irjen Sambo dalam perjalanan",
+//         "credit": "detikX"
+//       },
+//       "start_date": {
+//         "month": "7",
+//         "day": "2",
+//         "year": "2022",
+//         "hour": "13",
+//         "minute": "00",
+//         "second": "00",
+//         "millisecond": 0,
+//         // "format": "dd mmm yy,hh.MM"
+//         "format": "dd mmm yy, HH:MM"
+//       },
+//       "text": {
+//         "headline": "Sabtu, 2 Juli 2022",
+//         "text": "Keluarga besar Ferdy Sambo dan istrinya Putri Candrawathi berangkat ke Magelang, Jawa Tengah, untuk menengok kedua anaknya yang bersekolah di SMA Taruna Nusantara, Magelang. Rombongan ajudan diajak serta, termasuk Yosua, Richard Eliezer Pudihang Lumiu alias Bharada E, Bripka Ricky Rizal, Briptu Daden, serta asisten rumah tangga bernama Kuat Ma’ruf dan S. Mereka menginap di rumah Ferdy Sambo di Cempaka Residence, Mertoyudan, Magelang."
+//       },
+//       "group": "Magelang"
+//     },
+//     {
+//       "media": {
+//         "url": "https://news.detik.com/x/detail/investigasi/20220815/Permufakatan-Jahat-Sambo-di-Duren-Tiga/images/freddy-sambo-kg1tu7.png",
+//         "caption": "Irjen Sambo dalam perjalanan",
+//         "credit": "detikX"
+//       },
+//       "start_date": {
+//         "month": "7",
+//         "day": "4",
+//         "year": "2022",
+//         "hour": "18",
+//         "minute": "00",
+//         "second": "00",
+//         "millisecond": 0,
+//         "format": "dd mmm yy, HH:MM"
+//       },
+//       "text": {
+//         "headline": "Senin, 4 Juli 2022",
+//         "text": "Kuat Ma’ruf mengklaim memergoki Yosua duduk berdekatan dengan Putri di Sofa. Kuat menegur Yosua karena menuding apa yang dilakukan Yosua itu tidak sopan."
+//       },
+//       "group": "Magelang"
+//     },
+//     {
+//       "start_date": {
+//         "year": "2022",
+//         "month": "7",
+//         "day": "6",
+//         "hour": "09",
+//         "minute": "00",
+//         "second": "00",
+//         "millisecond": 0,
+//         "format": "dd mmm yy, HH:MM"
 
-    {
-      "start_date": {
-        "month": "7",
-        "day": "8",
-        "year": "2022",
-        "hour": "15",
-        "minute": "18",
-        "second": "00",
-        "millisecond": 0,
-        "format": "dd mmm yy, HH:MM"
-      },
-      "text": {
-        "headline": "Jumat, 8 Juli 2022",
-        "text": "<p>Sambo dan rombongan Putri tiba di rumah pribadi Irjen Ferdy Sambo di Jalan Saguling III, Duren Tiga, Jakarta Selatan. Sambo tiba lebih dulu sekitar pukul 15.29 WIB. Menyusul 11 menit kemudian Putri dan rombongan. Di rumah pribadi ini, Sambo menanyakan tentang kejadian di Magelang kepada Putri. Obrolan Putri dengan Sambo ini disebut Komnas HAM sangat mempengaruhi konstruksi peristiwa pembunuhan Yosua. Sejak saat itulah, diduga rencana pembunuhan Yosua mulai dirancang.</p><p>Masih di Saguling III, Sambo disebut sempat memanggil Ricky untuk mengeksekusi Yosua. Namun Ricky menolak. Akhirnya Sambo memerintahkan Richard menembak Yosua. Richard mengklaim takut menolaknya.<p>"
-      },
-      "group": "Rencana Pembunuhan"
-    },
-    {
-      "start_date": {
-        "month": "7",
-        "day": "8",
-        "year": "2022",
-        "hour": "17",
-        "minute": "00",
-        "second": "00",
-        "millisecond": 0,
-        "format": "dd mmm yy, HH:MM"
-      },
-      "text": {
-        "headline": "Jumat, 8 Juli 2022",
-        "text": "<p>Rombongan dari Magelang akhirnya pulang ke rumah dinas Ferdy Sambo di Kompleks Polri, Duren Tiga. Putri tiba lebih dulu sekitar pukul 17.09 WIB. Bersama Putri ada Kuat, Yosua, Richard, dan Ricky. Selang beberapa menit kemudian, Ferdy juga tiba di rumah dinas. Kuat, Ricky, dan Richard diminta Sambo berkumpul dalam suatu ruangan. Putri kabarnya langsung masuk ke kamarnya. Yosua saat itu masih berada di pekarangan rumah.</p><p>Sambo meminta Ricky mengajak Yosua ke ruangan. Saat Yosua masuk ruangan, sudah ada Kuat, Sambo, dan Richard. Sambo sudah memegang senjata HS-9 milik Yosua dengan sarung tangan hitam. Sambo pun langsung menyuruh Yosua berlutut sambil melipatkan kedua tangannya di belakang kepala. Saat itulah eksekusi Brigadir J dilakukan. Sambo memerintahkan Richard menembak Yosua. “Dor, dor, dor!” Yosua tertelungkup bersimbah darah.<p>Dalam perkembangan terakhir, Kapolri Jenderal Listyo Sigit Prabowo menyebut Sambo melepaskan tembakan terakhir ke kepala belakang Yosua. Dia kemudian menembakkan pistol HS-9 milik Yosua itu ke berbagai arah untuk membuat kacau konstruksi peristiwa. Jelaga dari HS-9 itu dioleskan ke tangan Yosua. Sambo sempat melaporkan kepada Listyo bahwa seolah telah terjadi peristiwa baku tembak antarajudannya yang dipicu oleh pelecehan seksual yang dilakukan Yosua terhadap istrinya. Sambo bilang Yosua tewas dalam kejadian baku tembak itu.</p>"
-      },
-      "group": "Rencana Pembunuhan"
-    },
-    {
-      "start_date": {
-        "month": "8",
-        "day": "6",
-        "year": "2022",
-        "hour": "10",
-        "minute": "00",
-        "second": "00",
-        "millisecond": 0,
-        "format": "dd mmm yy, HH:MM"
-      },
-      "text": {
-        "headline": "Sabtu, 6 Agustus 2022",
-        "text": "<p>Richard menulis pengakuannya dalam empat lembar kertas. Catatan Richard itulah yang akhirnya menjadi patokan penyidik timsus yang dibentuk Listyo Sigit untuk menjerat aktor-aktor lain pembunuh Yosua.</p><p>Sebelumnya, skenario palsu versi Sambo kepada Listyo dan sejumlah jenderal polisi lainnya membuat penyidikan kasus pembunuhan Yosua ini menjadi gelap. Setelah nyaris sebulan dilakukan penyidikan, akhirnya titik terang pun ditemukan. Richard Eliezer, yang sudah dinyatakan sebagai tersangka, memberi pengakuan atas peristiwa yang terjadi di Duren Tiga.</p><p>Dalam kesaksiannya kepada penyidik, Richard menyebut dia diperintah oleh Sambo untuk membunuh Yosua. Polisi pun akhirnya menahan Sambo di Mako Brimob, Depok, Jawa Barat, pada hari yang sama.</p>"
-      },
-      "group": "Aktor Pembunuhan Berencana"
-    },
-    {
-      "start_date": {
-        "month": "8",
-        "day": "9",
-        "year": "2022",
-        "hour": "16",
-        "minute": "00",
-        "second": "00",
-        "millisecond": 0,
-        "format": "dd mmm yy, HH:MM"
-      },
-      "text": {
-        "headline": "Selasa, 9 Agustus 2022",
-        "text": "<p>Ferdy Sambo, Kuat Ma’ruf, dan Ricky Rizal ditetapkan sebagai tersangka pembunuhan berencana. Ketiganya disangkakan Pasal 340 subsider Pasal 338 juncto Pasal 55 dan Pasal 56 KUHP dengan ancaman maksimal hukuman mati.</p>"
-      },
-      "group": "Aktor Pembunuhan Berencana"
-    },
-    {
-      "start_date": {
-        "month": "8",
-        "day": "11",
-        "year": "2022",
-        "hour": "19",
-        "minute": "00",
-        "second": "00",
-        "millisecond": 0,
-        "format": "dd mmm yy, HH:MM"
-      },
-      "text": {
-        "headline": "Kamis, 11 Agustus 2022",
-        "text": '<p>Atas terungkapnya kasus pembunuhan Brigadir J ini, Sambo pun mengirimkan surat permohonan maafnya kepada Kapolri beserta semua sejawatnya yang ikut terlibat dalam upaya <i>obstruction of justice</i>. Surat itu dibacakan oleh pengacara keluarga Sambo, Arman Hanis, di depan awak media.</p><p>"Izinkan saya sebagai manusia yang tidak lepas dari kekhilafan secara tulus meminta maaf dan memohon maaf sebesar-besarnya, khususnya kepada rekan sejawat Polri beserta keluarga serta masyarakat luas yang terdampak akibat perbuatan saya yang memberikan informasi tidak benar serta memicu polemik dalam pusaran kasus Duren Tiga yang menimpa saya dan keluarga," sepotong isi surat Sambo yang dibacakan Arman Hanis.</p>'
-      },
-      "group": "Aktor Pembunuhan Berencana"
-    },
-    {
-      "start_date": {
-        "month": "8",
-        "day": "12",
-        "year": "2022",
-        "hour": "19",
-        "minute": "00",
-        "second": "00",
-        "millisecond": 0,
-        "format": "dd mmm yy, HH:MM"
-      },
-      "text": {
-        "headline": "Jumat, 12 Agustus 2022",
-        "text": "<p>Polisi mencabut dua laporan keluarga Sambo terkait upaya pembunuhan terhadap Bharada E dan kasus pelecehan seksual terhadap Putri. Dua laporan ini diduga sengaja dibuat Sambo untuk mengaburkan peristiwa sebenarnya yang terjadi di Duren Tiga. Direktur Tindak Pidana Umum Bareskrim Polri Brigjen Andi Rian Djajadi mengungkapkan tidak ditemukan unsur pidana dalam pelaporan tersebut.</p>"
-      },
-      "group": "Aktor Pembunuhan Berencana"
-    }
-  ]
-};
+//       },
+//       "text": {
+//         "headline": "Rabu, 6 Juli 2022",
+//         "text": "Sambo dan Putri merayakan hari jadi pernikahan. Dikabarkan, sempat terjadi cekcok antara Putri dan Sambo seusai perayaan hari jadi ini. Pertengkaran inilah yang diduga membuat Sambo memilih pulang lebih dulu ke Jakarta keesokan paginya. Sambo pulang ke Jakarta menggunakan pesawat didampingi ajudannya, Briptu Daden."
+//       },
+//       "group": "Magelang"
+//     },
+//     {
+//       "start_date": {
+//         "month": "7",
+//         "day": "7",
+//         "year": "2022",
+//         "hour": "13",
+//         "minute": "00",
+//         "second": "00",
+//         "millisecond": 0,
+//         "format": "dd mmm yy, HH:MM"
+//       },
+//       "text": {
+//         "headline": "Kamis, 7 Juli 2022",
+//         "text": "<p>Kuat mengklaim kembali memergoki Yosua sedang berdekatan dengan Putri. Kali ini peristiwa itu terjadi di kamar. Waktu itu, Putri sedang sakit. Kuat diduga melaporkan peristiwa itu kepada Sambo. Itulah peristiwa yang disebut ‘merendahkan harkat dan martabat keluarga’, sehingga membuat Sambo marah.</p><p>Kuat dan Yosua pun disebut sempat terlibat adu mulut. Putri sampai menelepon Richard untuk minta bantuan melerai keduanya. Richard, yang sedang mengantar anak Sambo dan Putri sekolah ke Taruna Nusantara, langsung pulang ke Cempaka Residence sesuai perintah. Sambo juga disebut menelepon Ricky untuk menyita pistol HS-9 dan senjata laras panjang milik Yosua.</p>"
+//       },
+//       "group": "Magelang"
+//     },
+//     {
+//       "start_date": {
+//         "month": "7",
+//         "day": "8",
+//         "year": "2022",
+//         "hour": "08",
+//         "minute": "00",
+//         "second": "00",
+//         "millisecond": 0,
+//         "format": "dd mmm yy, HH:MM"
+//       },
+//       "text": {
+//         "headline": "Jumat, 8 Juli 2022",
+//         "text": "Rombongan Putri Candrawathi pulang ke Jakarta. Putri pulang menumpang mobil Lexus berwarna hitam bersama Richard, S, dan Kuat. Yosua menumpang mobil APV hitam bersama Ricky. Iring-iringan rombongan ini dikawal oleh satu mobil patroli. Di tengah perjalanan, Yosua sempat disebut mengirim pesan kepada Putri supaya mau membujuk Ricky mengembalikan senjatanya."
+//       },
+//       "group": "Magelang"
+//     },
+
+//     {
+//       "start_date": {
+//         "month": "7",
+//         "day": "8",
+//         "year": "2022",
+//         "hour": "15",
+//         "minute": "18",
+//         "second": "00",
+//         "millisecond": 0,
+//         "format": "dd mmm yy, HH:MM"
+//       },
+//       "text": {
+//         "headline": "Jumat, 8 Juli 2022",
+//         "text": "<p>Sambo dan rombongan Putri tiba di rumah pribadi Irjen Ferdy Sambo di Jalan Saguling III, Duren Tiga, Jakarta Selatan. Sambo tiba lebih dulu sekitar pukul 15.29 WIB. Menyusul 11 menit kemudian Putri dan rombongan. Di rumah pribadi ini, Sambo menanyakan tentang kejadian di Magelang kepada Putri. Obrolan Putri dengan Sambo ini disebut Komnas HAM sangat mempengaruhi konstruksi peristiwa pembunuhan Yosua. Sejak saat itulah, diduga rencana pembunuhan Yosua mulai dirancang.</p><p>Masih di Saguling III, Sambo disebut sempat memanggil Ricky untuk mengeksekusi Yosua. Namun Ricky menolak. Akhirnya Sambo memerintahkan Richard menembak Yosua. Richard mengklaim takut menolaknya.<p>"
+//       },
+//       "group": "Rencana Pembunuhan"
+//     },
+//     {
+//       "start_date": {
+//         "month": "7",
+//         "day": "8",
+//         "year": "2022",
+//         "hour": "17",
+//         "minute": "00",
+//         "second": "00",
+//         "millisecond": 0,
+//         "format": "dd mmm yy, HH:MM"
+//       },
+//       "text": {
+//         "headline": "Jumat, 8 Juli 2022",
+//         "text": "<p>Rombongan dari Magelang akhirnya pulang ke rumah dinas Ferdy Sambo di Kompleks Polri, Duren Tiga. Putri tiba lebih dulu sekitar pukul 17.09 WIB. Bersama Putri ada Kuat, Yosua, Richard, dan Ricky. Selang beberapa menit kemudian, Ferdy juga tiba di rumah dinas. Kuat, Ricky, dan Richard diminta Sambo berkumpul dalam suatu ruangan. Putri kabarnya langsung masuk ke kamarnya. Yosua saat itu masih berada di pekarangan rumah.</p><p>Sambo meminta Ricky mengajak Yosua ke ruangan. Saat Yosua masuk ruangan, sudah ada Kuat, Sambo, dan Richard. Sambo sudah memegang senjata HS-9 milik Yosua dengan sarung tangan hitam. Sambo pun langsung menyuruh Yosua berlutut sambil melipatkan kedua tangannya di belakang kepala. Saat itulah eksekusi Brigadir J dilakukan. Sambo memerintahkan Richard menembak Yosua. “Dor, dor, dor!” Yosua tertelungkup bersimbah darah.<p>Dalam perkembangan terakhir, Kapolri Jenderal Listyo Sigit Prabowo menyebut Sambo melepaskan tembakan terakhir ke kepala belakang Yosua. Dia kemudian menembakkan pistol HS-9 milik Yosua itu ke berbagai arah untuk membuat kacau konstruksi peristiwa. Jelaga dari HS-9 itu dioleskan ke tangan Yosua. Sambo sempat melaporkan kepada Listyo bahwa seolah telah terjadi peristiwa baku tembak antarajudannya yang dipicu oleh pelecehan seksual yang dilakukan Yosua terhadap istrinya. Sambo bilang Yosua tewas dalam kejadian baku tembak itu.</p>"
+//       },
+//       "group": "Rencana Pembunuhan"
+//     },
+//     {
+//       "start_date": {
+//         "month": "8",
+//         "day": "6",
+//         "year": "2022",
+//         "hour": "10",
+//         "minute": "00",
+//         "second": "00",
+//         "millisecond": 0,
+//         "format": "dd mmm yy, HH:MM"
+//       },
+//       "text": {
+//         "headline": "Sabtu, 6 Agustus 2022",
+//         "text": "<p>Richard menulis pengakuannya dalam empat lembar kertas. Catatan Richard itulah yang akhirnya menjadi patokan penyidik timsus yang dibentuk Listyo Sigit untuk menjerat aktor-aktor lain pembunuh Yosua.</p><p>Sebelumnya, skenario palsu versi Sambo kepada Listyo dan sejumlah jenderal polisi lainnya membuat penyidikan kasus pembunuhan Yosua ini menjadi gelap. Setelah nyaris sebulan dilakukan penyidikan, akhirnya titik terang pun ditemukan. Richard Eliezer, yang sudah dinyatakan sebagai tersangka, memberi pengakuan atas peristiwa yang terjadi di Duren Tiga.</p><p>Dalam kesaksiannya kepada penyidik, Richard menyebut dia diperintah oleh Sambo untuk membunuh Yosua. Polisi pun akhirnya menahan Sambo di Mako Brimob, Depok, Jawa Barat, pada hari yang sama.</p>"
+//       },
+//       "group": "Aktor Pembunuhan Berencana"
+//     },
+//     {
+//       "start_date": {
+//         "month": "8",
+//         "day": "9",
+//         "year": "2022",
+//         "hour": "16",
+//         "minute": "00",
+//         "second": "00",
+//         "millisecond": 0,
+//         "format": "dd mmm yy, HH:MM"
+//       },
+//       "text": {
+//         "headline": "Selasa, 9 Agustus 2022",
+//         "text": "<p>Ferdy Sambo, Kuat Ma’ruf, dan Ricky Rizal ditetapkan sebagai tersangka pembunuhan berencana. Ketiganya disangkakan Pasal 340 subsider Pasal 338 juncto Pasal 55 dan Pasal 56 KUHP dengan ancaman maksimal hukuman mati.</p>"
+//       },
+//       "group": "Aktor Pembunuhan Berencana"
+//     },
+//     {
+//       "start_date": {
+//         "month": "8",
+//         "day": "11",
+//         "year": "2022",
+//         "hour": "19",
+//         "minute": "00",
+//         "second": "00",
+//         "millisecond": 0,
+//         "format": "dd mmm yy, HH:MM"
+//       },
+//       "text": {
+//         "headline": "Kamis, 11 Agustus 2022",
+//         "text": '<p>Atas terungkapnya kasus pembunuhan Brigadir J ini, Sambo pun mengirimkan surat permohonan maafnya kepada Kapolri beserta semua sejawatnya yang ikut terlibat dalam upaya <i>obstruction of justice</i>. Surat itu dibacakan oleh pengacara keluarga Sambo, Arman Hanis, di depan awak media.</p><p>"Izinkan saya sebagai manusia yang tidak lepas dari kekhilafan secara tulus meminta maaf dan memohon maaf sebesar-besarnya, khususnya kepada rekan sejawat Polri beserta keluarga serta masyarakat luas yang terdampak akibat perbuatan saya yang memberikan informasi tidak benar serta memicu polemik dalam pusaran kasus Duren Tiga yang menimpa saya dan keluarga," sepotong isi surat Sambo yang dibacakan Arman Hanis.</p>'
+//       },
+//       "group": "Aktor Pembunuhan Berencana"
+//     },
+//     {
+//       "start_date": {
+//         "month": "8",
+//         "day": "12",
+//         "year": "2022",
+//         "hour": "19",
+//         "minute": "00",
+//         "second": "00",
+//         "millisecond": 0,
+//         "format": "dd mmm yy, HH:MM"
+//       },
+//       "text": {
+//         "headline": "Jumat, 12 Agustus 2022",
+//         "text": "<p>Polisi mencabut dua laporan keluarga Sambo terkait upaya pembunuhan terhadap Bharada E dan kasus pelecehan seksual terhadap Putri. Dua laporan ini diduga sengaja dibuat Sambo untuk mengaburkan peristiwa sebenarnya yang terjadi di Duren Tiga. Direktur Tindak Pidana Umum Bareskrim Polri Brigjen Andi Rian Djajadi mengungkapkan tidak ditemukan unsur pidana dalam pelaporan tersebut.</p>"
+//       },
+//       "group": "Aktor Pembunuhan Berencana"
+//     }
+//   ]
+// };
 
 
 // http://timeline.knightlab.com/docs/json-format.html
@@ -545,7 +557,7 @@ var timeline_json = {
 // two arguments: the id of the Timeline container (no '#')
 // and the JSON object or an instance of TL.TimelineConfig created from
 // a suitable JSON object
-window.timeline = new TL.Timeline('timeline-embed'
-  //, timeline_json
-  , sample_json
-);
+// window.timeline = new TL.Timeline('timeline-embed'
+//   //, timeline_json
+//   , sample_json
+// );
