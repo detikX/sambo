@@ -126,9 +126,9 @@ main {
     font-family: 'PT Serif' !important;
   }
   .timeline-wrapper {
-    height: 90vh;
+    height: 650px;
     @media screen and (max-width:766px){
-      height: 70vh;
+      height: 600px;
     }
   }
   .tl-timeline p {
