@@ -1,0 +1,113 @@
+$max: 766px;
+// $blue: rgb(83, 157, 192);
+$blue: #2b88b4;
+$orange: #f7941f;
+
+section {
+  // background: #b0ffe3;
+  background: #cfd7dc;
+  position: relative;
+  padding: 32px 0;
+  z-index: 99;
+  // text-align: justify;
+  h2 {
+    text-align: left;
+  }
+  // min-height: 100vh;
+}
+
+.banner {
+  height: 100vh;
+  width: auto;
+  padding: 0;
+  z-index: 9;
+  @media screen and (max-width: 766px) {
+    height: 33vh;
+  }
+  &__bg {
+    // opacity: 0.9;
+    // filter: blur(2px);
+  }
+
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+}
+
+.center-title {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%,-50%);
+  h1 {
+    font-weight: 700;
+
+  }
+}
+
+.wrap-detik {
+  width: 640px;
+  margin: 0 auto;
+  display: block;
+  @media screen and (max-width: 766px) {
+    width: auto;
+  }
+}
+.paragraph {
+  padding-top: 0;
+  p {
+    font-size: 16px;
+    @media screen and (max-width: 766px) {
+      font-size: 14px;
+    }
+  }
+  @media screen and (max-width: 766px) {
+    padding-top: 16px;
+  }
+  position: relative;
+  // &::before {
+  //   content: "";
+  //   position: absolute;
+  //   left: 0;
+  //   top: -69px;
+  //   right: 0;
+  //   background: linear-gradient(to bottom, transparent, #cfd7dc);
+  //   height: 80px;
+  // }
+  // p {
+  //   text-align: justify;
+  // }
+}
+
+.color-black {
+  color: #000000;
+  transition: 0.3s;
+  &:hover,
+  &:focus {
+    color: #000000;
+    // font-weight: bold;
+    // margin-left: 4px;
+    // text-decoration: none;
+  }
+}
+
+.credit {
+  border-top: 2px solid;
+  // background: #c3c4c5;
+  // #c6c4c4
+  .name,
+  .jobdesc {
+    @media screen and (max-width: 766px) {
+      font-size: 14px;
+    }
+  }
+}
+.hidden {
+  display: none;
+}
+
+.tl-slide .tl-slide-content-container .tl-slide-content {
+  width: auto !important;
+}
