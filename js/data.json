@@ -1,6 +1,7 @@
 {
     "events": [
         {
+            "id":1,
             "media": {
                 "url": "https://news.detik.com/x/detail/investigasi/20220808/Irjen-Sambo-di-Pusaran-Pembunuhan-Brigadir-J/images/ferdi-sambo--ha7hw.png",
                 "caption": "Irjen Sambo dalam perjalanan",
@@ -14,7 +15,7 @@
                 "minute": "00",
                 "second": "00",
                 "millisecond": 0,
-                "format": "dd mmm yy, HH:MM"
+                "format": "HH:MM"
             },
             "text": {
                 "headline": "Sabtu, 2 Juli 2022",
@@ -23,6 +24,7 @@
             "group": "Magelang"
         },
         {
+            "id":2,
             "media": {
                 "url": "https://news.detik.com/x/detail/investigasi/20220815/Permufakatan-Jahat-Sambo-di-Duren-Tiga/images/freddy-sambo-kg1tu7.png",
                 "caption": "Irjen Sambo dalam perjalanan",
@@ -36,7 +38,7 @@
                 "minute": "00",
                 "second": "00",
                 "millisecond": 0,
-                "format": "dd mmm yy, HH:MM"
+                "format": "HH:MM"
             },
             "text": {
                 "headline": "Senin, 4 Juli 2022",
@@ -45,6 +47,7 @@
             "group": "Magelang"
         },
         {
+            "id":3,
             "start_date": {
                 "year": "2022",
                 "month": "7",
@@ -53,7 +56,7 @@
                 "minute": "00",
                 "second": "00",
                 "millisecond": 0,
-                "format": "dd mmm yy, HH:MM"
+                "format": "HH:MM"
             },
             "text": {
                 "headline": "Rabu, 6 Juli 2022",
@@ -62,6 +65,7 @@
             "group": "Magelang"
         },
         {
+            "id":4,
             "start_date": {
                 "month": "7",
                 "day": "7",
@@ -70,7 +74,7 @@
                 "minute": "00",
                 "second": "00",
                 "millisecond": 0,
-                "format": "dd mmm yy, HH:MM"
+                "format": "HH:MM"
             },
             "text": {
                 "headline": "Kamis, 7 Juli 2022",
@@ -79,6 +83,7 @@
             "group": "Magelang"
         },
         {
+            "id":5,
             "start_date": {
                 "month": "7",
                 "day": "8",
@@ -87,7 +92,7 @@
                 "minute": "00",
                 "second": "00",
                 "millisecond": 0,
-                "format": "dd mmm yy, HH:MM"
+                "format": "HH:MM"
             },
             "text": {
                 "headline": "Jumat, 8 Juli 2022",
@@ -96,6 +101,7 @@
             "group": "Magelang"
         },
         {
+            "id":6,
             "start_date": {
                 "month": "7",
                 "day": "8",
@@ -104,7 +110,7 @@
                 "minute": "18",
                 "second": "00",
                 "millisecond": 0,
-                "format": "dd mmm yy, HH:MM"
+                "format": "HH:MM"
             },
             "text": {
                 "headline": "Jumat, 8 Juli 2022",
@@ -113,6 +119,7 @@
             "group": "Rencana Pembunuhan"
         },
         {
+            "id":7,
             "start_date": {
                 "month": "7",
                 "day": "8",
@@ -121,7 +128,7 @@
                 "minute": "00",
                 "second": "00",
                 "millisecond": 0,
-                "format": "dd mmm yy, HH:MM"
+                "format": "HH:MM"
             },
             "text": {
                 "headline": "Jumat, 8 Juli 2022",
@@ -130,6 +137,7 @@
             "group": "Rencana Pembunuhan"
         },
         {
+            "id":8,
             "start_date": {
                 "month": "8",
                 "day": "6",
@@ -138,7 +146,7 @@
                 "minute": "00",
                 "second": "00",
                 "millisecond": 0,
-                "format": "dd mmm yy, HH:MM"
+                "format": "HH:MM"
             },
             "text": {
                 "headline": "Sabtu, 6 Agustus 2022",
@@ -147,6 +155,7 @@
             "group": "Aktor Pembunuhan Berencana"
         },
         {
+            "id":9,
             "start_date": {
                 "month": "8",
                 "day": "9",
@@ -155,7 +164,7 @@
                 "minute": "00",
                 "second": "00",
                 "millisecond": 0,
-                "format": "dd mmm yy, HH:MM"
+                "format": "HH:MM"
             },
             "text": {
                 "headline": "Selasa, 9 Agustus 2022",
@@ -164,6 +173,7 @@
             "group": "Aktor Pembunuhan Berencana"
         },
         {
+            "id":10,
             "start_date": {
                 "month": "8",
                 "day": "11",
@@ -172,7 +182,7 @@
                 "minute": "00",
                 "second": "00",
                 "millisecond": 0,
-                "format": "dd mmm yy, HH:MM"
+                "format": "HH:MM"
             },
             "text": {
                 "headline": "Kamis, 11 Agustus 2022",
@@ -181,6 +191,7 @@
             "group": "Aktor Pembunuhan Berencana"
         },
         {
+            "id":11,
             "start_date": {
                 "month": "8",
                 "day": "12",
@@ -189,7 +200,7 @@
                 "minute": "00",
                 "second": "00",
                 "millisecond": 0,
-                "format": "dd mmm yy, HH:MM"
+                "format": "HH:MM"
             },
             "text": {
                 "headline": "Jumat, 12 Agustus 2022",

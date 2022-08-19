@@ -61,58 +61,53 @@ $(() => {
 //   timenav_height: 250
 // };
 
-// $.ajax({
-//   url: 'js/data.json',
-//   type: 'GET',
-//   success: (response) => {
-//     // console.log(response.events.length);
-//     var a;
-//     for (a = 0; a < response.events.length; a++) {
+$.ajax({
+  url: 'js/data.json',
+  type: 'GET',
+  success: (response) => {
+    // console.log(response.events.length);
+    var i;
+    var nul = [];
+    
+    for (var i = 0; i < response.events.length; i++) {
+      if (response.events[i].id % 2 !== 0) {
+        // response.events[i].id.push(response.events[i].id.splice(i, 1)[0]);
+        // console.log(i + ': ' + response.events[i].id.join(' '));
+        // nul.push(response.events)
+        var dates = response.events[i].id;
+        // console.log(dates);
+        $(".dedidedi").append(`
+          <div class="font-bold">${dates}</div>
+        `)
+      }
+    }
+    // var odds = response.events[i].id.filter(number => {
+    //   return number % 2 !== 0;
+    // });
+    // // const arr = [1, 2, 3, 4, 5, 6, 7, 8, 9];
 
 
-//       $(".ag-format-container").append(`
+    // console.log(odds); 
 
-//       <div class="js-timeline ag-timeline">
-//         <div class="js-timeline_line ag-timeline_line">
-//           <div class="js-timeline_line-progress ag-timeline_line-progress"></div>
-//         </div>
-//         <div class="ag-timeline_list">
-//         <div class="js-timeline_item ag-timeline_item">
-//         <div class="ag-timeline-card_box">
-//           <div class="js-timeline-card_point-box ag-timeline-card_point-box">
-//             <div class="ag-timeline-card_point">${response.events[a].start_date.year}</div>
-//           </div>
-//           <div class="ag-timeline-card_meta-box">
-//             <div class="ag-timeline-card_meta">${response.events[a].text.headline}</div>
-//           </div>
-//         </div>
-//         <div class="ag-timeline-card_item">
-//           <div class="ag-timeline-card_inner">
-//             <div class="ag-timeline-card_img-box">
-//               <img src="https://raw.githubusercontent.com/SochavaAG/example-mycode/master/pens/timeline/images/img-13.png" class="ag-timeline-card_img" width="640" height="360" />
-//             </div>
-//             <div class="ag-timeline-card_info">
-//               <div class="ag-timeline-card_title">${response.events[a].text.headline}</div>
-//               <div class="ag-timeline-card_desc">
-//               ${response.events[a].text.text}
-//               </div>
-//             </div>
-//           </div>
-//           <div class="ag-timeline-card_arrow"></div>
-//         </div>
-//       </div>
+  
+  // console.log(response.events);
+    // for (a = 0; a < response.events.length; a++) {
 
 
-//         </div>
-//       </div>
+    //   $(".dedidedi").append(`
 
-//       `)
-//       // console.log(response.events[a].start_date);
+    //     <div class="dedidedi__1">
+    //       <div class="odd"></div>
+    //       <div class="even"></div>
+    //     </div>
 
-//     }
+    //   `)
+    //   // console.log(response.events[a].start_date);
 
-//   }
-// })
+    // }
+
+  }
+})
 
 $(window).on('scroll', function () {
   fnOnScroll();

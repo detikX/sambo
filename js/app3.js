@@ -83,9 +83,26 @@ $(() => {
 * By Alvaro Trigo 
 * Follow me on Twitter: https://twitter.com/imac2
 */
-(function () {
-  init();
 
+(function () {
+  $.ajax({
+    url: 'js/data.json',
+    type: 'GET',
+    success: (response) => {
+      // console.log(response.events.length);
+      var a;
+      for (a = 0; a < response.events.length; a++) {
+        $(".datax").append(
+          `
+          <section>
+            <h1>${response.events[a].text.headline}</h1>
+          </section>
+          `
+        )
+      }
+    }
+  })
+  init();
   var g_containerInViewport;
   function init() {
     setStickyContainersSize();
@@ -127,3 +144,4 @@ $(() => {
     }
   }
 })();
+
