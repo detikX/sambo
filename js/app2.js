@@ -117,7 +117,10 @@ $.ajax({
         var headline = response.events[i].text.headline;
         var desc = response.events[i].text.text;
         var url_media = response.events[i].text.url_media;
-        // console.log(id_);
+
+        if ($("iframe").attr('id') !== 'id11') {
+          $('iframe').hide()
+        }
         $(".ag-timeline_list").append(`
         <div class="js-timeline_item ag-timeline_item">
         <div class="ag-timeline-card_box">
@@ -134,7 +137,8 @@ $.ajax({
             <div class="ag-timeline-card_img-box">
               <img
                 src="${url_media}"
-                class="ag-timeline-card_img" alt="" />
+                class="ag-timeline-card_img id${id_}" alt=""/>
+                <iframe id="id${id_}" src="${url_media}" frameborder="0"  scrolling="no" allowfullscreen="true" class="tambah"></iframe>
             </div>
             <div class="ag-timeline-card_info">
               <div class="ag-timeline-card_title">${headline}</div>

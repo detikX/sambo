@@ -543,3 +543,16 @@ main {
     font-weight: 700;
   }
 }
+
+.id11 {
+  display: none;
+}
+
+.tambah {
+  width: 460px;
+  height: 236px;
+  @media screen and (max-width:766px) {
+    width: 100%;
+    height: auto;
+  }
+}
