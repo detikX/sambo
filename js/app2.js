@@ -109,6 +109,10 @@ $.ajax({
           </div>
         `)
       }
+      // $('iframe').hide()
+      if ($("iframe").attr('id') !== 'id10') {
+        $('iframe').hide()
+      }
       if (response.events[i].id % 2 === 0) {
         // response.events[i].id.push(response.events[i].id.splice(i, 1)[0]);
         // console.log(i + ': ' + response.events[i].id.join(' '));
@@ -117,10 +121,6 @@ $.ajax({
         var headline = response.events[i].text.headline;
         var desc = response.events[i].text.text;
         var url_media = response.events[i].text.url_media;
-
-        if ($("iframe").attr('id') !== 'id11') {
-          $('iframe').hide()
-        }
         $(".ag-timeline_list").append(`
         <div class="js-timeline_item ag-timeline_item">
         <div class="ag-timeline-card_box">
