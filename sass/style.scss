@@ -39,7 +39,7 @@ section {
     filter: sepia(30%);
     border: solid 6px $primary;
     @media screen and (max-width:766px) {
-      width: auto;
+      width: 100%;
     }
   }
   #container:after{
