@@ -86,7 +86,11 @@ $.ajax({
             <div class="ag-timeline-card_box">
               <div class="js-timeline-card_point-box
                 ag-timeline-card_point-box">
-                <div class="ag-timeline-card_point">${id_}</div>
+                <div class="ag-timeline-card_point">
+                  <div class="tembakan">
+                    <img src="img/Tembakan2.png" />
+                  </div>
+                </div>
               </div>
               <div class="ag-timeline-card_meta-box">
                 <div class="ag-timeline-card_meta">${headline}</div>
@@ -131,7 +135,11 @@ $.ajax({
           </div>
           <div class="js-timeline-card_point-box
             ag-timeline-card_point-box">
-            <div class="ag-timeline-card_point">${id_}</div>
+            <div class="ag-timeline-card_point">
+            <div class="tembakan">
+                    <img src="img/Tembakan2.png" />
+                  </div>
+            </div>
           </div>
         </div>
         <div class="ag-timeline-card_item">

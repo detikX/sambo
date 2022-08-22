@@ -322,6 +322,7 @@ main {
   }
   .ag-timeline-card_point {
     height: 50px;
+    position: relative;
     line-height: 50px;
     width: 50px;
     border: 3px solid #1d1d1b;
@@ -335,13 +336,20 @@ main {
     -webkit-border-radius: 50%;
     -moz-border-radius: 50%;
     border-radius: 50%;
+    .tembakan {
+      opacity: 0;
+    }
   }
   .js-ag-active .ag-timeline-card_point {
     // color: #ff0;
     // background-color: #FF0;
     // background: #3a2c11;
     background-color: #ae0404;
-    border: 3px solid #ae0404;
+    // border: 3px solid #ae0404;
+    position: relative;
+    .tembakan {
+      opacity: 1;
+    }
   }
   .ag-timeline-card_meta-box {
     display: inline-block;
@@ -665,6 +673,17 @@ main {
 }
 .id11 {
   display: none;
+}
+
+.tembakan {
+  position: absolute;
+  left: -25px;
+  top: -27px;
+  width: 100px;
+  right: 0;
+  z-index: 1;
+  bottom: 0;
+  height: 170px;
 }
 
 #play-button {
