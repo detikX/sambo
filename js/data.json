@@ -218,6 +218,44 @@
                 "url_media":"https://awsimages.detik.net.id/community/media/visual/2022/08/04/nama-asli-bharada-e-bharada-richard-eliezer_169.jpeg?w=700&q=90"
             },
             "group": "Aktor Pembunuhan Berencana"
+        },
+        {
+            "id":12,
+            "start_date": {
+                "month": "8",
+                "day": "18",
+                "year": "2022",
+                "hour": "19",
+                "minute": "00",
+                "second": "00",
+                "millisecond": 0,
+                "format": "HH:MM"
+            },
+            "text": {
+                "headline": "Kamis, 18 Agustus 2022",
+                "text": "<p>Polisi mengkonfrontasi keterangan empat tersangka. Ricky, Kuat, dan Sambo berada dalam satu ruangan. Sementara Bharada E ikut hadir melalui aplikasi Zoom. Hasil dari konfrontasi keterangan empat tersangka inilah yang akhirnya meyakinkan Polri untuk menetapkan Putri sebagai tersangka kelima pembunuh Brigadir J.</p>",
+                "url_media":"https://awsimages.detik.net.id/community/media/visual/2022/08/04/nama-asli-bharada-e-bharada-richard-eliezer_169.jpeg?w=700&q=90"
+            },
+            "group": "Aktor Pembunuhan Berencana"
+        },
+        {
+            "id":13,
+            "start_date": {
+                "month": "8",
+                "day": "19",
+                "year": "2022",
+                "hour": "19",
+                "minute": "00",
+                "second": "00",
+                "millisecond": 0,
+                "format": "HH:MM"
+            },
+            "text": {
+                "headline": "Jumat, 19 Agustus 2022",
+                "text": "<p>Putri ditetapkan sebagai tersangka. Putri disangkakan Pasal yang sama dengan Sambo, Kuat, dan Ricky. Dia juga diancam maksimal hukuman mati.</p>",
+                "url_media":"https://awsimages.detik.net.id/community/media/visual/2022/08/04/nama-asli-bharada-e-bharada-richard-eliezer_169.jpeg?w=700&q=90"
+            },
+            "group": "Aktor Pembunuhan Berencana"
         }
     ]
 }

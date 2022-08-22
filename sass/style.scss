@@ -23,6 +23,7 @@ section {
   width: auto;
   padding: 0;
   z-index: 9;
+  // background: linear-gradient(to right, rgba(36,31,31,1) 0%, rgba(36,31,31,1) 32%, rgba(74,71,70,1) 100%);
   @media screen and (max-width: 766px) {
     height: 33vh;
   }
@@ -36,6 +37,7 @@ section {
     height: 100%;
     object-fit: cover;
   }
+  
 }
 
 .center-title {
@@ -131,7 +133,7 @@ main {
     font-family: 'PT Serif' !important;
   }
   .tl-timeline .tl-caption, .tl-timeline .tl-credit {
-    font-family: 'Montserrat' !important;
+    font-family: 'Lato' !important;
   }
   .timeline-wrapper {
     height: 650px;
@@ -145,6 +147,7 @@ main {
 }
 
 .timeline {
+  // display: none;
   img {
     max-width: 100%;
   }
@@ -235,7 +238,7 @@ main {
     position: relative;
     .imgs {
       position: absolute;
-      bottom: 0;
+      bottom: -42px;
       width: 100px;
       left: -42px;
       height: 100px;
@@ -555,4 +558,31 @@ main {
     width: 100%;
     height: auto;
   }
+}
+
+.scroll-totop {
+  width: 30px;
+  height: 30px;
+  background: #393935;
+  position: fixed;
+  bottom: 8px;
+
+  text-align: center;
+  right: 8px;
+  cursor: pointer;
+  z-index: 1990;
+  border-radius: 50%;
+  padding: 2px;
+  transition: .3s;
+  &:hover {
+    background: #30250e;
+  }
+  i {
+    font-size: 16px;
+    color: white;
+  }
+}
+
+.pistol {
+  margin-bottom: 32px;
 }
