@@ -79,6 +79,8 @@ $.ajax({
         var desc = response.events[i].text.text;
         var url_media = response.events[i].text.url_media;
         // console.log(id_);
+        $('iframe').hide()
+
         $(".ag-timeline_list").append(`
         <div class="js-timeline_item ag-timeline_item">
             <div class="ag-timeline-card_box">
@@ -94,8 +96,10 @@ $.ajax({
               <div class="ag-timeline-card_inner">
                 <div class="ag-timeline-card_img-box">
                   <img
+                    class="id${id_}"
                     src="${url_media}"
                     class="ag-timeline-card_img" />
+                    <iframe id="id${id_}" src="${url_media}" frameborder="0"  scrolling="no" allowfullscreen="true" class="tambah"></iframe>
                 </div>
                 <div class="ag-timeline-card_info">
                   <div class="ag-timeline-card_title">${headline}</div>
@@ -110,9 +114,7 @@ $.ajax({
         `)
       }
       // $('iframe').hide()
-      if ($("iframe").attr('id') !== 'id10') {
-        $('iframe').hide()
-      }
+      
       if (response.events[i].id % 2 === 0) {
         // response.events[i].id.push(response.events[i].id.splice(i, 1)[0]);
         // console.log(i + ': ' + response.events[i].id.join(' '));

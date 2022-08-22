@@ -288,13 +288,14 @@ main {
   .ag-timeline_line-progress {
     width: 100%;
     height: 20%;
-    background-color: #FF0;
+    // background-color: #FF0;
+    background-color: #393935;
     position: relative;
     .imgs {
       position: absolute;
       bottom: -42px;
       width: 100px;
-      left: -66px;
+      left: -50px;
       height: 100px;
       z-index: 999;
       max-width: initial;
@@ -661,6 +662,9 @@ main {
 
 #id11 {
   display: block !important;
+}
+.id11 {
+  display: none;
 }
 
 #play-button {
