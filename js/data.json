@@ -146,6 +146,25 @@
         {
             "id":8,
             "start_date": {
+                "month": "7",
+                "day": "8",
+                "year": "2022",
+                "hour": "17",
+                "minute": "00",
+                "second": "00",
+                "millisecond": 0,
+                "format": "HH:MM"
+            },
+            "text": {
+                "headline": "Minggu, 10 Juli 2022",
+                "text": "<p>Sambo dan Putri memanggil Ricky, Richard, dan Kuat ke rumahnya di Jalan Saguling III. Mereka disodorkan uang senilai Rp 2 miliar. Ricky sebagai eksekutor akan diberikan uang Rp 1 miliar jika. Sedangkan Kuat dan Ricky sebagai saksi akan menerima masing-masing Rp 500 juta.</p>",
+                "url_media":"https://assets.promediateknologi.com/crop/0x0:0x0/x/photo/2022/08/11/3296799977.jpg"
+            },
+            "group": "Rencana Pembunuhan"
+        },
+        {
+            "id":9,
+            "start_date": {
                 "month": "8",
                 "day": "6",
                 "year": "2022",
@@ -163,7 +182,7 @@
             "group": "Aktor Pembunuhan Berencana"
         },
         {
-            "id":9,
+            "id":10,
             "start_date": {
                 "month": "8",
                 "day": "9",
@@ -182,7 +201,7 @@
             "group": "Aktor Pembunuhan Berencana"
         },
         {
-            "id":10,
+            "id":11,
             "start_date": {
                 "month": "8",
                 "day": "11",
@@ -201,7 +220,7 @@
             "group": "Aktor Pembunuhan Berencana"
         },
         {
-            "id":11,
+            "id":12,
             "start_date": {
                 "month": "8",
                 "day": "12",
@@ -220,7 +239,7 @@
             "group": "Aktor Pembunuhan Berencana"
         },
         {
-            "id":12,
+            "id":13,
             "start_date": {
                 "month": "8",
                 "day": "18",
@@ -239,7 +258,7 @@
             "group": "Aktor Pembunuhan Berencana"
         },
         {
-            "id":13,
+            "id":14,
             "start_date": {
                 "month": "8",
                 "day": "19",
