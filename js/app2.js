@@ -87,10 +87,9 @@ $.ajax({
               <div class="js-timeline-card_point-box
                 ag-timeline-card_point-box">
                 <div class="ag-timeline-card_point">
-                  <div class="tembakan" hidden>
+                  <div class="tembakan">
                     <img src="img/Tembakan2.png" />
                   </div>
-                  ${id_}
                 </div>
               </div>
               <div class="ag-timeline-card_meta-box">
@@ -137,10 +136,9 @@ $.ajax({
           <div class="js-timeline-card_point-box
             ag-timeline-card_point-box">
             <div class="ag-timeline-card_point">
-            <div class="tembakan" hidden>
+            <div class="tembakan">
                     <img src="img/Tembakan2.png" />
                   </div>
-                  ${id_}
             </div>
           </div>
         </div>
