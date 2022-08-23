@@ -204,6 +204,7 @@ main {
   }
   img {
     max-width: 100%;
+    border-radius: 6px;
   }
   
   .ag-format-container {
@@ -616,7 +617,8 @@ main {
 
 .tambah {
   width: 100%;
-  height: 236px;
+  height: 300px;
+  border-radius: 6px 6px 0 0;
   @media screen and (max-width:766px) {
     width: 100%;
     height: auto;
@@ -688,4 +690,38 @@ main {
 
 #play-button {
   cursor: pointer;
+}
+
+.title-horror {
+  padding: 16px 0;
+  h1 {
+    font-family: 'Averia Libre', sans-serif;
+    font-size:4vw;
+    width: fit-content;
+    // padding-right: 8px;
+    overflow: hidden; /* Ensures the content is not revealed until the animation */
+    // border-right: .15em solid orange; /* The typwriter cursor */
+    white-space: nowrap; /* Keeps the content on a single line */
+    margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+    // letter-spacing: .15em; /* Adjust as needed */
+    animation: 
+      typing 3.5s steps(30, end),
+      blink-caret .5s step-end infinite;
+      @media screen and (max-width:766px) {
+        font-size: 5vh;
+      }
+    }
+
+    /* The typing effect */
+    @keyframes typing {
+      from { width: 0 }
+      to { width: 100% }
+    }
+
+    /* The typewriter cursor effect */
+    @keyframes blink-caret {
+      from, to { border-color: transparent }
+      50% { border-color: orange }
+    }
+
 }
