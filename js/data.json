@@ -166,6 +166,25 @@
         {
             "id":9,
             "start_date": {
+                "month": "7",
+                "day": "8",
+                "year": "2022",
+                "hour": "17",
+                "minute": "00",
+                "second": "00",
+                "millisecond": 0,
+                "format": "HH:MM"
+            },
+            "text": {
+                "headline": "Senin, 11 Juli 2022",
+                "text": "<p>Mabes Polri menggelar konferensi pers pembunuhan Brigadir J. Waktu itu, Karopenmas Divisi Humas Polri Brigjen Ahmad Ramadhan mengatakan telah terjadi peristiwa baku tembak antara ajudan Ferdy Sambo di rumah dinasnya. Dua orang yang baku tembak itu adalah Yosua dan Richard. Yosua tewas dalam baku tembak ini. Sementara Richard tak terluka sama sekali. Belakangan investigasi <strong>detikX</strong> mendapatkan informasi bahwa Ahmad Ramadhan waktu itu hanya membacakan press rilis yang berisi skenario palsu buatan Penasihat Ahli Polri Fahmi Alamsyah dan Irjen Ferdy Sambo sendiri.</p>",
+                "url_media":"img/json/11juli.jpeg"
+            },
+            "group": "Rencana Pembunuhan"
+        },
+        {
+            "id":10,
+            "start_date": {
                 "month": "8",
                 "day": "6",
                 "year": "2022",
@@ -183,7 +202,7 @@
             "group": "Aktor Pembunuhan Berencana"
         },
         {
-            "id":10,
+            "id":11,
             "start_date": {
                 "month": "8",
                 "day": "9",
@@ -202,7 +221,7 @@
             "group": "Aktor Pembunuhan Berencana"
         },
         {
-            "id":11,
+            "id":12,
             "start_date": {
                 "month": "8",
                 "day": "11",
@@ -221,7 +240,7 @@
             "group": "Aktor Pembunuhan Berencana"
         },
         {
-            "id":12,
+            "id":13,
             "start_date": {
                 "month": "8",
                 "day": "12",
@@ -240,7 +259,7 @@
             "group": "Aktor Pembunuhan Berencana"
         },
         {
-            "id":13,
+            "id":14,
             "start_date": {
                 "month": "8",
                 "day": "18",
@@ -259,7 +278,7 @@
             "group": "Aktor Pembunuhan Berencana"
         },
         {
-            "id":14,
+            "id":15,
             "start_date": {
                 "month": "8",
                 "day": "19",
@@ -273,6 +292,25 @@
             "text": {
                 "headline": "Jumat, 19 Agustus 2022",
                 "text": "<p>Putri ditetapkan sebagai tersangka. Putri disangkakan Pasal yang sama dengan Sambo, Kuat, dan Ricky. Dia juga diancam maksimal hukuman mati.</p>",
+                "url_media":"img/json/19agustus.jpeg"
+            },
+            "group": "Aktor Pembunuhan Berencana"
+        },
+        {
+            "id":16,
+            "start_date": {
+                "month": "8",
+                "day": "19",
+                "year": "2022",
+                "hour": "19",
+                "minute": "00",
+                "second": "00",
+                "millisecond": 0,
+                "format": "HH:MM"
+            },
+            "text": {
+                "headline": "Jumat, 22 Agustus 2022",
+                "text": "<p>Perhimpunan Dokter Forensik Indonesia (PDFI) menggelar konferensi pers terkait hasil autopsi kedua Brigadir J. Ketua Umum PDFI Ade Firmansyah menyebut, tidak ada bekas penganiayaan di tubuh Yosua. Hanya ada 5 bekas luka tembak. Empat peluru menembus tubuh. Satu proyektil bersarang dalam tubuh. Dua luka fatal yang membuat Yosua tewas ada di kepala belakang dan bagian dada. Dan satu luka seperti tersayat di bagian jari bekas lintasan peluru. Autopsi kedua ini dilakukan karena permintaan keluarga Yosua yang menduga adanya kejanggalan dalam autopsi pertama.</p><p>Keterangan ini sedikit berbeda dengan keterangan awal polisi yang disampaikan mantan Kapolres Jakarta Selatan Kombes Budhi Herdi Susianto pada Selasa, 12 Juli 2022. Budhi bilang waktu itu, ada 7 luka tembak di tubuh Yosua. Meski demikian, keterangan Budhi waktu itu yang menyebut bahwa tidak ada penganiayaan di tubuh Yosua telah terkonfirmasi dari hasil autopsi kedua yang dilakukan PDFI.</p>",
                 "url_media":"img/json/19agustus.jpeg"
             },
             "group": "Aktor Pembunuhan Berencana"
