@@ -694,9 +694,11 @@ main {
 
 .title-horror {
   padding: 16px 0;
+  text-align: center;
   h1 {
     font-family: 'Averia Libre', sans-serif;
     font-size:4vw;
+    text-align: center;
     width: fit-content;
       @media screen and (max-width:766px) {
         font-size: 5vh;
@@ -705,4 +707,9 @@ main {
 
    
 
+}
+
+.inikah {
+  position: relative;
+  // background: url('../img/crimebg.jpg');
 }
