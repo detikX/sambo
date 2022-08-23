@@ -147,13 +147,39 @@ section {
   // background: #c3c4c5;
   // background: #3a2c11;
   background: #30250e;
+  text-align: center;
+  margin: 0 auto;
+  display: block;
+  .wrapings {
+    display: block;
+    width: 50%;
+    margin: 0 auto 4px;
+    @media screen and (max-width:766px) {
+      width: 100%;
+    }
+  }
   // #c6c4c4
   .name,
   .jobdesc {
     color: #fff;
+    display: inline-block;
+    vertical-align: top;
     @media screen and (max-width: 766px) {
       font-size: 14px;
     }
+  }
+  .name {
+    text-align: left;
+    width: 45%;
+    font-size: 16px;
+    @media screen and (max-width:766px) {
+      font-size: 14px;
+    }
+  }
+  .jobdesc {
+    text-align: right;
+    width: 45%;
+    margin-right: 16px;
   }
 }
 .hidden {
@@ -741,6 +767,10 @@ main {
       object-fit: cover;
     }
   }
+}
+
+.sumber {
+  text-align: center;
 }
 
 .color-black {
