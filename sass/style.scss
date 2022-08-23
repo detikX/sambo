@@ -364,10 +364,23 @@ main {
     color: #3a2c11
   }
   .ag-timeline-card_item {
+    &::before {
+      content: '';
+      left: 0;
+      top: 0;
+      bottom: 0;
+      right: 0;
+      border-radius: 6px;
+      position: absolute;
+      background: rgba(48, 37, 14,.75);
+    }
     display: inline-block;
     width: 45%;
+    // z-index: 20;
+    position: relative;
     margin: -77px 0 0;
-    background-color: #30250e;
+    // background-color: #30250e;
+    background: url('../img/kertas.jpg');
   
     opacity: 0;
   
@@ -444,6 +457,9 @@ main {
   }
   .ag-timeline-card_info {
     padding: 20px 30px;
+    border-radius: 6px;
+    position: relative;
+    z-index: 20;
   }
   .ag-timeline-card_title {
     display: none;
