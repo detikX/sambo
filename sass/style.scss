@@ -171,15 +171,21 @@ section {
   .name {
     text-align: left;
     width: 45%;
-    font-size: 16px;
+    font-size: 18px;
+    vertical-align: middle;
     @media screen and (max-width:766px) {
-      font-size: 14px;
+      font-size: 16px;
     }
   }
   .jobdesc {
     text-align: right;
     width: 45%;
+    font-size: 15px;
     margin-right: 16px;
+    vertical-align: middle;
+    @media screen and (max-width:766px) {
+      font-size: 14px;
+    }
   }
 }
 .hidden {
@@ -681,6 +687,9 @@ main {
   border-radius: 50%;
   padding: 2px;
   transition: .3s;
+  @media screen and (max-width:766px) {
+    bottom: 70px;
+  }
   &:hover {
     background: #30250e;
   }
