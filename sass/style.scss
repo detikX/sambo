@@ -685,7 +685,7 @@ main {
   cursor: pointer;
   z-index: 1990;
   border-radius: 50%;
-  padding: 2px;
+  padding: 0;
   transition: .3s;
   @media screen and (max-width:766px) {
     bottom: 70px;
@@ -799,5 +799,11 @@ main {
     left: 50%;
     width: 80px;
     transform: translate(-50%, 0px);
+  }
+}
+
+#komentar {
+  iframe {
+    display: block !important;
   }
 }
