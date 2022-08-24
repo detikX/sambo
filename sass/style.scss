@@ -501,6 +501,10 @@ main {
     font-weight: bold;
     font-size: 28px;
     color: #f5bd4c;
+    @media screen and (max-width:766px) {
+      font-size: 20px;
+      line-height: 30px;
+    }
   }
   .ag-timeline-card_desc {
     line-height: 1.45;
